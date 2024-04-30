@@ -1,0 +1,62 @@
+---
+sidebar_position: 4
+---
+
+# Loops
+
+Loops allows you to iterate over a chunk of code. They can be really useful when trying to resolve common problems
+
+## While loop
+
+While loops expect a [condition](#conditions), as long as the condition is met, the loop will continue.
+
+
+:::tip Avoid endless loops
+To avoid endless while loops, make sure you have either: a condition that gets updated, a break statement, or a return statement.
+:::
+
+```ts title="myWhileLoop.ri"
+var index = 0
+
+// highlight-start
+while (index < 10) {
+    println(string(index))
+    index = index + 1 // update index, this also updates the condition
+}
+```
+
+```shell title="output"
+> 0
+> 1
+> 2
+> 3
+> 4
+> 5
+> 6
+> 7
+> 8
+> 9
+```
+## For loop
+
+For loops expect a lower bound and a higher bound. It will loop and increment the lower bound until it reaches the higher bound.
+
+```ts title="myForLoop.ri"
+// highlight-start
+for index = 0 to 10 {
+    println(string(index))
+}
+```
+
+```shell title="output"
+> 0
+> 1
+> 2
+> 3
+> 4
+> 5
+> 6
+> 7
+> 8
+> 9
+```
