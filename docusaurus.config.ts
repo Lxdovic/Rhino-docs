@@ -64,7 +64,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Lxdovic/rhino',
           label: 'GitHub',
           position: 'right',
         },
@@ -112,10 +112,10 @@ const config: Config = {
     //   copyright: `Copyright © ${new Date().getFullYear()} Rhino, Inc. Built with Docusaurus.`,
     // },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.vsLight,
+      darkTheme: prismThemes.oceanicNext,
     },
-  } satisfies Preset.ThemeConfig,
+  } as Preset.ThemeConfig,
 };
 
 export default config;
