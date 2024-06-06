@@ -4,6 +4,34 @@
  * work well for content-centric websites.
  */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rainbowGradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    45deg,
+    #f3ec78,
+    #f7a278,
+    #f78d78,
+    #f77891,
+    #f778d1,
+    #b778f7,
+    #787cf7,
+    #78aef7,
+    #78f7f3,
+    #78f7a6,
+    #78f78d,
+    #91f778
+  );
+  background-size: 400% 400%;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #1d60b8;

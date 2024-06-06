@@ -1,12 +1,14 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import tailwindPlugin from './plugins/tailwind-plugin.cjs';
 
 const config: Config = {
   title: 'Rhino',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
-
+  favicon: 'img/logo.svg',
+  plugins: [tailwindPlugin],
+  staticDirectories: ['public', 'static'],
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
